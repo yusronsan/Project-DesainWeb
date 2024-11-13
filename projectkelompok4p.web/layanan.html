@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Tailor Citra Busana</title>
+    <link rel="icon"  href="image/logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Javanese Text', 'Times New Roman', serif; 
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            font-family: 'Javanese Text', 'Times New Roman', serif; 
+            line-height: 1.6; /* Mengatur jarak antar baris untuk keterbacaan yang lebih baik */
+            margin: 0; /* Menghilangkan margin default */
+            padding: 0; /* Menghilangkan padding default */
+        }
+
+        /* Header Styles */
+        header {
+            background-image: url('image/logo.png'); /* Ganti dengan path gambar header Anda */
+            background-size: cover;
+            background-position: center;
+            background: #D8D2C2; /* Warna latar belakang header */
+            color: #000000; /* Warna teks header */
+            padding: 10px 0; /* Padding atas dan bawah untuk header */
+            display: flex; /* Menggunakan flexbox untuk tata letak */
+            justify-content: space-between; /* Mengatur elemen di dalam header agar terpisah secara merata */
+            align-items: right; /* Mengatur elemen agar sejajar secara vertikal di tengah */
+            align-items: center;
+        }
+
+        /* Main Content Styles */
+        .services-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+
+        .service-category {
+            margin-bottom: 4rem;
+        }
+
+        .service-category h2 {
+            color: #4B0082;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 1.5rem;
+        }
+
+        .service-content h3 {
+            color: #4B0082;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .service-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            color: #4B0082;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+        .service-category h2 {
+                font-size: 2rem;
+            }
+
+        .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .logo img {
+                height: 100px; 
+        }
+
+        header h1 {
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+                font-family: 'Javanese Text', 'Times New Roman', serif; 
+                margin: 0; /* Menghilangkan margin default pada judul */
+                flex-grow: 1; /* Mengizinkan judul untuk mengambil ruang yang tersedia */
+                text-align: left; /* Mengatur teks judul agar berada di tengah */
+        }
+
+        header nav ul li {
+                margin: 0 15px; /* Memberikan jarak antar item list */
+        }
+
+        header nav ul {
+            list-style: none; /* Menghilangkan bullet pada list */
+            padding: 0; /* Menghilangkan padding default */
+            margin: 0; /* Menghilangkan margin default */
+            display: flex; /* Menggunakan flexbox untuk menata item secara horizontal */
+            justify-content: center; /* Mengatur item agar berada di tengah */
+        }
+
+        header nav ul li a {
+            color: #000000; /* Warna teks link */
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+            text-transform: capitalize; /* Mengubah semua huruf menjadi kapital */
+            font-size: 20px; /* Mengatur ukuran font link */
+            padding: 5px 7px; /* Memberikan padding pada link untuk area klik yang lebih besar */
+            transition: background-color 0.3s; /* Menambahkan efek transisi saat hover */
+        }
+
+        header nav ul li a:hover {
+            background-color: #555; /* Mengubah latar belakang saat hover */
+            color: #fff; /* Mengubah warna teks saat hover */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="image/logo.png" alt="Logo Taylor Citra Busana"></a>
+        </div>
+        <h1>Taylor Citra Busana</h1> <!-- Judul utama website -->
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tentangkami.html">Tentang Kami</a></li> <!-- Link ke bagian Tentang Kami -->
+                <li><a href="layanan.html">Layanan</a></li> <!-- Link ke bagian Layanan -->
+                <li><a href="kontak.html">Kontak</a></li> <!-- Link ke bagian Kontak -->
+            </ul>
+        </nav>
+    </header>
+
+    <main class="services-container">
+        <section class="service-category">
+            <h2>Jasa Jahitan Pakaian</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="image/baju1.jpeg" alt="Kemeja" class="service-image">
+                    <div class="service-content">
+                        <h3>Kemeja Custom</h3>
+                        <p>Kemeja dengan desain dan ukuran yang disesuaikan dengan kebutuhan Anda. Dibuat dengan bahan berkualitas tinggi dan perhatian detail yang sempurna.</p>
+                        <p class="price">Mulai dari Rp 100.000</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="image/gamisungu.jpeg" alt="Celana" class="service-image">
+                    <div class="service-content">
+                        <h3>Gamis Custom</h3>
+                        <p>Gamis dengan potongan presisi dan kualitas premium. Cocok untuk berbagai acara resmi dan profesional.</p>
+                        <p class="price">Mulai dari Rp 50.0000</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="image/kebaya.jpeg" alt="Jas" class="service-image">
+                    <div class="service-content">
+                        <h3>Kebaya</h3>
+                        <p>Kebaya tinggi dengan detail sempurna. Dibuat untuk memberikan kesan elegan dan profesional dalam setiap kesempatan.</p>
+                        <p class="price">Mulai dari Rp 75.000</p

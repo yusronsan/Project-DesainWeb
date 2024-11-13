@@ -1,0 +1,126 @@
+body {
+    font-family: 'Javanese Text', 'Times New Roman', serif; /* Font yang lebih sesuai dengan tema 
+    line-height: 1.6; /* Mengatur jarak antar baris untuk keterbacaan yang lebih baik */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+header {
+    background: #D8D2C2; /* Warna latar belakang header */
+    color: #000000; /* Warna teks header */
+    padding: 5px 0; /* Padding atas dan bawah untuk header */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: space-between; /* Mengatur elemen di dalam header agar terpisah secara merata */
+    align-items: right; /* Mengatur elemen agar sejajar secara vertikal di tengah */
+    align-items: center;
+}
+
+.logo img {
+    height: 100px; /* Mengatur tinggi logo, sesuaikan sesuai kebutuhan */
+}
+
+.produk {
+    width: 300px;  /* lebar gambar */
+    height: 200px; /* tinggi gambar */
+}
+
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    margin: 0; /* Menghilangkan margin default pada judul */
+    flex-grow: 1; /* Mengizinkan judul untuk mengambil ruang yang tersedia */
+    text-align: left; /* Mengatur teks judul agar berada di tengah */
+}
+
+header nav ul {
+    list-style: none; /* Menghilangkan bullet pada list */
+    padding: 0; /* Menghilangkan padding default */
+    margin: 0; /* Menghilangkan margin default */
+    display: flex; /* Menggunakan flexbox untuk menata item secara horizontal */
+    justify-content: center; /* Mengatur item agar berada di tengah */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Memberikan jarak antar item list */
+}
+
+header nav ul li a {
+    color: #000000; /* Warna teks link */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    text-transform: capitalize; /* Mengubah semua huruf menjadi kapital */
+    font-size: 20px; /* Mengatur ukuran font link */
+    padding: 5px 7px; /* Memberikan padding pada link untuk area klik yang lebih besar */
+    transition: background-color 0.3s; /* Menambahkan efek transisi saat hover */
+}
+
+header nav ul li a:hover {
+    background-color: #555; /* Mengubah latar belakang saat hover */
+    color: #fff; /* Mengubah warna teks saat hover */
+}
+
+#products {
+    padding: 20px; /* Padding untuk bagian produk */
+    background: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan transparansi */
+    border-radius: 5px; /* Sudut membulat untuk bagian produk */
+    margin-bottom: 20px; /* Jarak bawah untuk bagian produk */
+}
+
+.product-collage {
+    display: grid; /* Menggunakan grid untuk layout produk */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Mengatur kolom grid */
+    gap: 15px; /* Jarak antar item produk */
+}
+
+.product-item {
+    position: relative; /* Mengatur posisi relatif untuk item produk */
+    overflow: hidden; /* Menghindari konten yang melampaui batas */
+    border-radius: 5px; /* Sudut membulat untuk item produk */
+    background: #f9f9f9; /* Latar belakang item produk */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.product-item img {
+    width: 100%; /* Mengatur gambar agar responsif */
+    height: auto; /* Mengatur tinggi gambar secara otomatis */
+    border-radius: 5px; /* Sudut membulat untuk gambar */
+}
+
+.product-item h3 {
+    margin: 10px 0 5px; /* Margin untuk judul produk */
+    font-size: 18px; /* Ukuran font untuk judul produk */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
+
+.product-item p {
+    font-size: 14px; /* Ukuran font untuk deskripsi produk */
+    color: #666; /* Warna teks deskripsi produk */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
+
+
+.footer {
+    text-align: center; /* Memusatkan teks */
+    padding: 150px; /* Memberikan ruang di dalam footer */
+    background-image: url('image/bolah.png'); /* Ganti dengan path gambar Anda */
+    color: white; /* Warna teks */
+    width: 730%;
+}
+
+footer {
+    background-color: khaki; /* Warna latar belakang khaki */
+    display: flex; /* Menggunakan Flexbox */
+    align-items: center; /* Memusatkan secara vertikal */
+    justify-content: center; /* Memusatkan secara horizontal */
+    padding: 20px; /* Memberikan ruang di dalam footer */
+    text-align: center; /* Memusatkan teks */
+}
+
+.footer-image {
+    max-width: 100px; /* Mengatur lebar maksimum gambar */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    margin-right: 10px; /* Memberikan jarak antara gambar dan teks */
+}
